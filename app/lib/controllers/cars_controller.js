@@ -53,6 +53,9 @@ CarsController = RouteController.extend({
   action: function () {
     this.render();
   },
+  list: function() {
+    this.render('ListCars', {});
+  },
   onAfterAction: function () {
   },
   onStop: function () {

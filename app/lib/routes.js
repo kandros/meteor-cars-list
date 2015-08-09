@@ -17,3 +17,10 @@ Router.route('/cars/create', {
   action: 'create',
   where: 'client'
 });
+
+Router.route('/cars', {
+  name: 'carsList',
+  controller: 'CarsController',
+  action: 'list',
+  where: 'client'
+});
