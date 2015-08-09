@@ -24,3 +24,10 @@ Router.route('/cars', {
   action: 'list',
   where: 'client'
 });
+
+Router.route('/cars/:_id', {
+  name: 'editCar',
+  controller: 'CarsController',
+  action: 'edit',
+  where:'client'
+});

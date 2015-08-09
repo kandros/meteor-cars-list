@@ -24,6 +24,11 @@ CarsController = RouteController.extend({
   // return Posts.findOne({_id: this.params._id});
   
   data: function () {
+    return Cars.findOne({_id: this.params._id});
+  },
+
+  edit: function () {
+    this.render('EditCar', {});
   },
 
   create: function() {
