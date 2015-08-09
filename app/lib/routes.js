@@ -31,3 +31,10 @@ Router.route('/cars/:_id', {
   action: 'edit',
   where:'client'
 });
+
+Router.route('/cars/:_id', {
+  name: 'removeCar',
+  controller: 'CarsController',
+  action: 'remove',
+  where:'client'
+});
